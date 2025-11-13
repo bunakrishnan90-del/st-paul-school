@@ -85,8 +85,20 @@
     }
     .hero-left{flex:1; min-width:280px}
     .hero-right{flex:1; display:flex;justify-content:center}
-    .logo-large{width:160px;height:160px;border-radius:20px;display:inline-flex;align-items:center;justify-content:center;
-      background:linear-gradient(180deg,var(--blue-500),var(--blue-700)); box-shadow:0 20px 40px rgb(241, 12, 12); color:rgb(255, 0, 0);font-size:28px;font-weight:800}
+    ..logo-large{
+  width:160px;
+  height:160px;
+  border-radius:20px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:white; /* 🤍 White background */
+  box-shadow:0 20px 40px rgba(0,91,187,0.25); /* 🔵 Soft blue shadow */
+  color:var(--blue-700); /* 🔵 Blue SP text */
+  font-size:28px;
+  font-weight:800;
+}
+
     .kicker{display:inline-block;background:rgb(226, 0, 0);color:var(--blue-900);padding:6px 12px;border-radius:999px;font-weight:600;margin-bottom:12px}
     .hero h2{font-size:34px;margin:6px 0 12px;color:var(--blue-900)}
     .hero p.lead{color:var(--muted);line-height:1.6;font-size:16px;max-width:720px}
@@ -645,3 +657,4 @@
   </script>
 </body>
 </html>
+
