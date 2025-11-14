@@ -6,7 +6,7 @@
   <title>St. Paul Matric School - Mangalampettai</title>
   <style>
     /* ---------- base ---------- */
-    :root{
+   :root{
       --blue-900:#003f7f;
       --blue-700:#005bbb;
       --blue-500:#007fff;
@@ -15,7 +15,9 @@
       --glass: rgba(255,255,255,0.6);
       --accent: #9fd6ff;
       --muted:#6b7280;
-    }
+
+      --blue-100:#d7ecff;   /* ✅ add this */
+}
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
@@ -85,20 +87,22 @@
     }
     .hero-left{flex:1; min-width:280px}
     .hero-right{flex:1; display:flex;justify-content:center}
-    ..logo-large{
+ .logo-large{
   width:160px;
   height:160px;
   border-radius:20px;
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  background:white; /* 🤍 White background */
-  box-shadow:0 20px 40px rgba(0,91,187,0.25); /* 🔵 Soft blue shadow */
-  color:var(--blue-700); /* 🔵 Blue SP text */
-  font-size:28px;
-  font-weight:800;
-}
 
+  background:rgba(0,102,255,0.85);  /* 🔵 Blue box */
+  color:white;                      /* 🤍 White SP text */
+  font-size:50px;                   /* Bigger SP */
+  font-weight:800;
+
+  box-shadow:0 20px 40px rgba(0,102,255,0.5); /* 🔵 Glassy shadow */
+  backdrop-filter:blur(8px);        /* ✨ Glass effect */
+}
     .kicker {
   display: inline-block;
   background: var(--blue-100); /* soft light blue background */
@@ -107,6 +111,7 @@
   border-radius: 999px;
   font-weight: 600;
   margin-bottom: 12px;
+  
 }
     .hero h2{font-size:34px;margin:6px 0 12px;color:var(--blue-900)}
     .hero p.lead{color:var(--muted);line-height:1.6;font-size:16px;max-width:720px}
@@ -331,12 +336,11 @@
       </div>
     </section>
 
-    <!-- facilities much longer -->
    <section id="facilities" class="block reveal">
   <h3>Facilities & Campus</h3>
-  
+
   <div class="two-col">
-    
+
     <div class="col slide-left">
       <p class="muted">
         The campus is designed with safety and learning in mind:
@@ -349,7 +353,9 @@
       <div class="cards">
         <div class="card">
           <h4>Safe Campus</h4>
-          <p class="muted">Secure gates, first-aid, supervision, eco-friendly trees.</p>
+          <p class="muted">
+            Secure gates, first-aid, supervision, eco-friendly trees.
+          </p>
         </div>
       </div>
     </div>
@@ -375,11 +381,7 @@
        
 
         
-          <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzFygS0xo6zHDm0U6Vnu-stwIf8bceXWoEB_c0HP0Owdtz9wbyjOiSiKjp8wAqjSs787ht1w_u_nXhBuHD4WWRW-k_LbS00qaCJCgMXONIi2XpPqWstuFuqPyNDu5SLQ6yqaCsj=s680-w680-h510-rw" alt="campus" style="width:100%;border-radius:12px;box-shadow:0 18px 40px rgba(0,91,187,0.06)" />
-        </div>
-      </div>
-    </section>
-
+          
     <!-- timeline (long) -->
     <section id="timeline" class="block reveal">
       <h3>Our Journey — Timeline</h3>
@@ -686,6 +688,7 @@
   </script>
 </body>
 </html>
+
 
 
 
